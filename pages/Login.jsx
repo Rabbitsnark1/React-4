@@ -17,10 +17,10 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (email === "example@example.com" && password === "password123") {
-        alert("Вход успешен!");
+        alert("Вдох произошёл");
         navigate("/Posts");
     } else {
-      alert("Неправильные данные!");
+      alert("Ошибка");
     }
   };
 
@@ -33,17 +33,17 @@ const Login = () => {
           Введите Ваш email:
           <input
             type="email"
-            placeholder="Введите email"
+            placeholder="Введите свою почту"
             required
             value={email}
             onChange={handleEmailChange}
           />
         </label>
         <label>
-          Введите Ваш пароль:
+          Введите пароль:
           <input
             type="password"
-            placeholder="Введите пароль"
+            placeholder="Введите пароль для входа"
             required
             value={password}
             onChange={handlePasswordChange}
